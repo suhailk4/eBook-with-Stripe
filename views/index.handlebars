@@ -1,0 +1,45 @@
+ <section class="py-2">
+
+ <div class="row">
+
+               <div class="col-md-6 text-center">
+
+                  <h1 class="display-3 mt-3 pt-5">
+
+                      <p class="lead"> EBook with Stripe   </p>
+
+                      <form action="/charge" method="POST">
+                          <script
+                          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                          data-key="{{stripePublishableKey}}"
+                          data-amount="5000"
+                          data-name="Suhail eBook"
+                          data-description="eBook with Stripe"
+                          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                          data-locale="auto">
+
+                      </script>
+                      </form>
+
+
+                  </h1>
+
+
+               </div>
+
+              <div class="col-md-6">
+
+                       <img src="/img/book.jpg" alt="Book"  class="img-fluid" />
+
+
+
+              </div>
+
+
+
+
+
+
+ </div>
+
+</section>
